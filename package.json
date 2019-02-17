@@ -1,8 +1,14 @@
 {
-  "name": "budget-app",
+  "name": "Budget-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://RUHIMS.github.io/Budget-app/",
+  "engines": {
+    "npm": "6.4.1",
+    "node": "v8.12.0"
+  },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "npm": "^6.5.0",
@@ -12,7 +18,7 @@
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.2",
+    "react-scripts": "^2.1.5",
     "redux": "^4.0.1",
     "uuid": "^3.3.2"
   },
@@ -20,6 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
