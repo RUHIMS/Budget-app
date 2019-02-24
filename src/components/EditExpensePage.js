@@ -13,7 +13,7 @@ const EditExpensePage = (props) => {
             expense={props.expense}
             
             onSubmit={(expense)=>{
-                props.dispatch(editExpense(props.expense.id,expense))
+                props.dispatch(editExpense({ id: props.expense.id, updates: expense }))
                 props.history.push('/');
             }} />
         </div>
